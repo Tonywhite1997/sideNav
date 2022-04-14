@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+.fas{
+    color: white;
+}
+.header{
+    position: relative;
+    height: 3rem;
+    // width: 50vw;
+    width: 50px;
+    // background: rgb(20, 16, 14);
+    background: white;
+    transition: .5s ease-in-out;
+
+    .fa-bars{
+        position: absolute;
+        left: .5em;
+        top: .5em;
+        font-size: 1.5rem;
+        color: black;
+    }
+    .fa-window-close{
+        display: none;
+        position: absolute;
+        right: .5em;
+        top: .5em;
+        font-size: 1.5rem;
+    }
+}
+.side-nav{
+    position: fixed;
+    background: rgb(28, 22, 22);
+    width: 60vw;
+    height: 100vh;
+    left: -60rem;
+    transition: .5s ease-in-out;
+    .items{
+        line-height: 5rem;
+        display: block;
+        margin-left: 1em;
+    }
+    .items li{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .items a:hover{
+        color: rgb(245, 104, 61);
+        transition: .2s ease-in-out;
+    }
+    .home, .portfolio, .audience, .commerce, .charts, .about, .contacts{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    .fas{
+        margin-right: .3em;
+        font-size: 1.5rem;
+    }
+    .appearance{
+        height: 3rem;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 70px;
+        left: 1em;
+    }
+    .fa-sun, .fa-moon{
+        font-size: 2.5rem;
+        color: rgb(245, 104, 61);
+    }
+    .fa-sun{
+        display: none;
+    }
+}
