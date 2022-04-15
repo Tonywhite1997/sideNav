@@ -6,12 +6,9 @@ let lightMode = document.getElementById("lightMode");
 let darkMode = document.getElementById("darkMode");
 
 closeToggle.addEventListener("click", function(){
-    sideNav.style.left="-60rem";
+    sideNav.style.left="-100vw";
     closeToggle.style.display="none";
     openToggle.style.display="flex";
-    header.style.width="50px";
-    header.style.backgroundColor="white";
-    openToggle.style.color="black";
 })
 
 openToggle.addEventListener("click", function(){
@@ -19,8 +16,6 @@ openToggle.addEventListener("click", function(){
     sideNav.style.display="block"
     openToggle.style.display="none";
     closeToggle.style.display="flex";
-    header.style.width="60vw"
-    header.style.backgroundColor="rgb(20, 16, 14)"
 })
 
 darkMode.addEventListener("click", function(){
@@ -28,7 +23,8 @@ darkMode.addEventListener("click", function(){
     darkMode.style.display="none";
     lightMode.style.display="flex";
     document.body.style.color="white";
-    header.style.backgroundColor="rgb(23, 21, 19)";
+    header.style.backgroundColor="rgb(79, 44, 44)"
+    sideNav.style.backgroundColor="rgb(79, 44, 44)";
 })
 
 lightMode.addEventListener("click", function(){
@@ -36,4 +32,6 @@ lightMode.addEventListener("click", function(){
     lightMode.style.display="none";
     darkMode.style.display="flex";
     document.body.style.color="black";
+    header.style.backgroundColor="rgb(201, 141, 119)"
+    sideNav.style.backgroundColor="rgb(201, 141, 119)";
 })

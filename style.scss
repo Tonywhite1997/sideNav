@@ -12,6 +12,9 @@ a{
     text-decoration: none;
     color: white;
 }
+a:hover{
+    border-left: 3px solid rgb(113, 222, 73);
+}
 li{
     list-style: none;
 }
@@ -20,19 +23,16 @@ li{
 }
 .header{
     position: relative;
-    height: 3rem;
-    // width: 50vw;
-    width: 50px;
-    // background: rgb(20, 16, 14);
-    background: white;
+    height: 3.5rem;
+    width: 100vw;
+    background: rgb(201, 141, 119);
     transition: .5s ease-in-out;
-
     .fa-bars{
         position: absolute;
-        left: .5em;
+        right: .5em;
         top: .5em;
         font-size: 1.5rem;
-        color: black;
+        color: white;
     }
     .fa-window-close{
         display: none;
@@ -44,42 +44,52 @@ li{
 }
 .side-nav{
     position: fixed;
-    background: rgb(28, 22, 22);
-    width: 60vw;
+    background: rgb(201, 141, 119);
+    width: 100vw;
     height: 100vh;
-    left: -60rem;
+    left: -100vw;
     transition: .5s ease-in-out;
     .items{
-        line-height: 5rem;
+        line-height: 4.5rem;
         display: block;
         margin-left: 1em;
     }
     .items li{
         font-size: 1.2rem;
         font-weight: bold;
+        width: 80%;
     }
     .items a:hover{
-        color: rgb(245, 104, 61);
+        color: rgb(245, 47, 47);
         transition: .2s ease-in-out;
     }
     .home, .portfolio, .audience, .commerce, .charts, .about, .contacts{
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        width: 50%;
+        width: 100%;
     }
     .fas{
+        height: 50px;
+        width: 50px;
         margin-right: .3em;
         font-size: 1.5rem;
+        display: flex;
+        align-items: center;
     }
     .appearance{
         height: 3rem;
-        width: 50%;
+        width: 100%;
         display: flex;
         align-items: center;
         position: absolute;
-        bottom: 70px;
+        // bottom: 70px;
         left: 1em;
+        p{
+            color: white;
+            margin-right: 1em;
+            font-weight: bold;
+        }
     }
     .fa-sun, .fa-moon{
         font-size: 2.5rem;

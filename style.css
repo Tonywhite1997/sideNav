@@ -16,6 +16,10 @@ a {
   color: white;
 }
 
+a:hover {
+  border-left: 3px solid #71de49;
+}
+
 li {
   list-style: none;
 }
@@ -26,19 +30,19 @@ li {
 
 .header {
   position: relative;
-  height: 3rem;
-  width: 50px;
-  background: white;
+  height: 3.5rem;
+  width: 100vw;
+  background: #c98d77;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
 .header .fa-bars {
   position: absolute;
-  left: .5em;
+  right: .5em;
   top: .5em;
   font-size: 1.5rem;
-  color: black;
+  color: white;
 }
 
 .header .fa-window-close {
@@ -51,16 +55,16 @@ li {
 
 .side-nav {
   position: fixed;
-  background: #1c1616;
-  width: 60vw;
+  background: #c98d77;
+  width: 100vw;
   height: 100vh;
-  left: -60rem;
+  left: -100vw;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
 .side-nav .items {
-  line-height: 5rem;
+  line-height: 4.5rem;
   display: block;
   margin-left: 1em;
 }
@@ -68,10 +72,11 @@ li {
 .side-nav .items li {
   font-size: 1.2rem;
   font-weight: bold;
+  width: 80%;
 }
 
 .side-nav .items a:hover {
-  color: #f5683d;
+  color: #f52f2f;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -86,17 +91,25 @@ li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 50%;
+  width: 100%;
 }
 
 .side-nav .fas {
+  height: 50px;
+  width: 50px;
   margin-right: .3em;
   font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .side-nav .appearance {
   height: 3rem;
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,8 +117,13 @@ li {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  bottom: 70px;
   left: 1em;
+}
+
+.side-nav .appearance p {
+  color: white;
+  margin-right: 1em;
+  font-weight: bold;
 }
 
 .side-nav .fa-sun, .side-nav .fa-moon {
